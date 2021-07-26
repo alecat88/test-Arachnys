@@ -41,7 +41,9 @@ function BusinessSearchPage() {
       let averageRiskScore = 0;
       businesses.map(item => averageRiskScore+=item.risk_score);
       if (totalCount > 0) {
-        averageRiskScore = averageRiskScore/totalCount;
+        averageRiskScore = Math.round(averageRiskScore/totalCount * 10) / 10;
+      } else {
+        averageRiskScore = "N/A";
       }
       setTextObject({
         "Results count": totalCount,
@@ -50,7 +52,7 @@ function BusinessSearchPage() {
     },[businesses]);
 
   return (
-    <SearchPage onSearchTextChange={onSearchTextChange} textObject={textObject} />
+    <SearchPage onSearchTextChange={onSearchTextChange} textObject={textObject} result={businesses} />
   );
 }
 
