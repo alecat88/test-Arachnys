@@ -21,9 +21,9 @@ function App() {
         </Toolbar>
       </AppBar>
       <Box mt={1}>
-       <BusinessSearchPage />
+        <BusinessSearchPage />
       </Box>
-      </Provider>
+    </Provider>
   );
 }
 

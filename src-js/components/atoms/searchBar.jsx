@@ -4,13 +4,13 @@ import {
 } from "@material-ui/core";
 import "./SearchBar.css";
 
-function SearchBar({onChange}) {
-    let onInputChangeHandler = event => {
-        onChange(event.target.value)
-    };
-    
+function SearchBar({ onChange }) {
+  let onInputChangeHandler = event => {
+    onChange(event.target.value)
+  };
+
   return (
-      <TextField label="Search" onChange={onInputChangeHandler} />
+    <TextField label="Search" onChange={onInputChangeHandler} />
   );
 };
 
