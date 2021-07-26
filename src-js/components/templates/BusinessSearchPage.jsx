@@ -10,8 +10,8 @@ function BusinessSearchPage() {
   const [searchText, setSearchText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [textObject, setTextObject] = useState({
-    "Results count": 1,
-    "Average risk": 97,
+    "Results count": 0,
+    "Average risk": "N/A",
   });
   const BusinessData = useSelector((state) => state.businessData.businesses);
   const businesses = BusinessData;
