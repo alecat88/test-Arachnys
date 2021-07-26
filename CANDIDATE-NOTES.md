@@ -33,7 +33,7 @@ SOLUTION:
 3) The results are stored in the Redux store.
 4) The BusinessSearchPage component get automatically the current results fromt he redux store and elaborate the totalCount and average risk score.
 5) These values are then passed down the the SearchPage children.
-6) The SearchPage children then render the results by mapping the array passed from the parent component.
+6) The SearchPage children then render the results by mapping the array passed from the parent component. date-fns packages has been used to translat the time. (date-fns use plain javascript dates and the bundle size is really small compared to other more common packages.)
 
 7) In the SearchPage component there is a "SearchBar" component which will trigger a callback on every input in the textField. On every input change then, a callback run in the "BusinessSearchPage" component that will trigger the Redux Action which fetch the API (as in point 1).
 
