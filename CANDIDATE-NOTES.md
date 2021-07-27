@@ -7,9 +7,10 @@ Time taken: 2hrs
 Language used: Javascript
 
 ## Notes
-Typescript was not chosen so that I would have been faster and complete the challenge in the estimated 2hours time limit.
+First of all thank you for taking the time to review this code.
 
-A spinner loader had been added on purpose to provide feedback to the user, so that he knows that the api request has been completed.
+- Typescript has not chosen so that I would have been faster and complete the challenge in the estimated 2hours time limit.
+- A spinner loader had been added on purpose to provide feedback to the user, so that he knows that the api request has been completed.
 
 STRUCTURE (smart & dumb components):
 Components are divided by using an atomic UI structure type (https://atomicdesign.bradfrost.com/chapter-2/);
