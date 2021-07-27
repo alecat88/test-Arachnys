@@ -11,6 +11,7 @@ First of all thank you for taking the time to review this code.
 
 - Typescript has not chosen so that I would have been faster and complete the challenge in the estimated 2hours time limit.
 - A spinner loader had been added on purpose to provide feedback to the user, so that he knows that the api request has been completed.
+- The error you see in the console "CANCEL" are there on purpose so that you can see that previous requests have been cancelled and only the latest one is taken in consideration. This way also the performance of the app is improved, as only the results of the last request will be used.
 
 STRUCTURE (smart & dumb components):
 Components are divided by using an atomic UI structure type (https://atomicdesign.bradfrost.com/chapter-2/);
